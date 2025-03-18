@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 // Import the Sequelize object of the config.js file that you created before.
 const sequelize = require('../config.js');
 // Create a constant to store the model returned from the define method of the Sequelize object.
-const employee = sequelize.define('employee', {
+const Employee = sequelize.define('employee', {
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -25,4 +25,4 @@ const employee = sequelize.define('employee', {
 });
 
 // Export each of them to be used again in other modules.
-module.exports = employee;
+module.exports = Employee;
